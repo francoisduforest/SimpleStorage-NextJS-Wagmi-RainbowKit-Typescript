@@ -31,14 +31,8 @@ git clone [your-repo-url]
 cd SimpleStorage-NextJS-Wagmi-RainbowKit-Typescript
 ```
 
-2. Install dependencies for both projects:
+2. Install dependencies:
 ```bash
-# Install Backend dependencies
-cd Backend
-pnpm install
-
-# Install Frontend dependencies
-cd ../Frontend
 pnpm install
 ```
 
@@ -54,14 +48,12 @@ pnpm install
 
 1. Start the local Hardhat node:
 ```bash
-cd Backend
 pnpm node
 ```
 
 2. In a new terminal, deploy the contract locally:
 ```bash
-cd Backend
-pnpm deploy:localhost
+pnpm deploy:local
 ```
 This will:
 - Deploy the contract to your local network
@@ -69,7 +61,6 @@ This will:
 
 3. Start the frontend development server:
 ```bash
-cd Frontend
 pnpm dev
 ```
 
@@ -80,13 +71,11 @@ pnpm dev
 ### Available Commands
 
 ```bash
-cd Backend
-
 # Start local node
 pnpm node
 
 # Deploy to localhost
-pnpm deploy:localhost
+pnpm deploy:local
 
 # Deploy to Sepolia testnet
 pnpm deploy:sepolia
@@ -113,8 +102,6 @@ The frontend is built with:
 ### Available Commands
 
 ```bash
-cd Frontend
-
 # Start development server
 pnpm dev
 
