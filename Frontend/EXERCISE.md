@@ -27,6 +27,7 @@ Frontend/
   └── utils/
       ├── client.js           // Configuration du client blockchain
       └── sepolia.js          // Configuration du réseau
+ ```
 
 ## Étapes de l'Exercice
 
@@ -34,15 +35,31 @@ Frontend/
 
 Voir https://ui.shadcn.com/docs/installation/next
 
-1. Installez les dépendances nécessaires dans le dossierFrontend:
-   ```bash
-   pnpm dlx shadcn@latest init -d
-   ```
+1. Installez les dépendances nécessaires dans le dossier Frontend:
+```console
+pnpm dlx @latest init -d
+```
 
+Si vous rencontrez l'erreur suivante
+
+```console
+Something went wrong. Please check the error below for more details.
+If the problem persists, please open an issue on GitHub.
+
+Command failed with exit code 1: npm install tailwindcss-animate class-variance-authority lucide-react clsx tailwind-merge
+npm error Cannot read properties of null (reading 'matches')
+```
+
+Relancez la commande avec pnpm : 
+```console
+npm install tailwindcss-animate class-variance-authority lucide-react clsx tailwind-merge
+```
 2. Installez les composants requis :
-   ```bash
+
+  ```console
    pnpm dlx shadcn@latest add card badge button input alert toast
    ```
+
 
 ### 2. Reproduction des Composants
 
