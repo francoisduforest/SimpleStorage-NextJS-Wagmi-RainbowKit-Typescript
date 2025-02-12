@@ -11,8 +11,7 @@ export default function Home() {
   const { data: numberGet, isPending: getIsPending, refetch } = useReadContract({
     address: contractAddress,
     abi: contractAbi,
-    functionName: 'retrieve',
-    account: address
+    functionName: 'retrieve'
   })
 
   const { data: hash, writeContract } = useWriteContract()

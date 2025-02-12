@@ -4,12 +4,11 @@
   "description": "A full-stack decentralized application with Next.js frontend and Hardhat backend",
   "private": true,
   "scripts": {
-    "install": "pnpm install && cd Backend && pnpm install && cd ../Frontend && pnpm install",
     "install:backend": "cd Backend && pnpm install",
     "install:frontend": "cd Frontend && pnpm install",
     "node": "cd Backend && pnpm node",
     "dev": "cd Frontend && pnpm dev",
-    "deploy:local": "cd Backend && pnpm deploy:localhost",
+    "deploy:localhost": "cd Backend && pnpm deploy:localhost",
     "deploy:sepolia": "cd Backend && pnpm deploy:sepolia",
     "clean": "cd Backend && pnpm clean",
     "test": "cd Backend && pnpm test",
