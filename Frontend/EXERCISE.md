@@ -32,19 +32,16 @@ Frontend/
 
 ### 1. Installation et Configuration
 
-1. Installez les dépendances nécessaires :
+Voir https://ui.shadcn.com/docs/installation/next
+
+1. Installez les dépendances nécessaires dans le dossierFrontend:
    ```bash
-   pnpm install @shadcn/ui
+   pnpm dlx shadcn@latest init -d
    ```
 
-2. Configurez shadcn/ui :
+2. Installez les composants requis :
    ```bash
-   pnpm dlx shadcn-ui@latest init
-   ```
-
-3. Installez les composants requis :
-   ```bash
-   pnpm dlx shadcn-ui@latest add card badge button input alert toast
+   pnpm dlx shadcn@latest add card badge button input alert toast
    ```
 
 ### 2. Reproduction des Composants
